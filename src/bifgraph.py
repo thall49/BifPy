@@ -18,7 +18,7 @@ class BifGraph:
 
     def _eval(self):
         r = np.linspace(self._rmin, self._rmax, self._subs, endpoint=True)
-        x = np.linspace(self._xmin, self._xmax, self._subs, endpoint=True)
+        x = np.flip(np.linspace(self._xmin, self._xmax, self._subs, endpoint=True))
         R, X = np.meshgrid(r, x, indexing='xy')
 
         grid = np.stack((R, X), axis=-1)

@@ -2,7 +2,7 @@ from src.bifgraph import BifGraph
 import numpy as np
 
 def f(tup):
-    return tup[0] + tup[1]
+    return tup[0] - tup[1]
 
 bg = BifGraph(f)
 
