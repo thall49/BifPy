@@ -30,12 +30,12 @@ class BifGraph:
         self._title = title
 
     def rlim(self, tup: tuple[float, float]):
-        self._rmin(tup[0])
-        self._rmax(tup[1])
+        self._rmin = tup[0]
+        self._rmax = tup[1]
 
     def xlim(self, tup: tuple[float, float]):
-        self._xmin(tup[0])
-        self._xmax(tup[1])
+        self._xmin = tup[0]
+        self._xmax = tup[1]
 
     def subsections(self, num: int):
         self._subs = num
