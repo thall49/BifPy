@@ -13,4 +13,4 @@ bg.subsections(5)
 bg._gen_grid()
 
 print(bg._grid)
-print(np.shape(bg._grid))
+print(bg._grid.shape)
