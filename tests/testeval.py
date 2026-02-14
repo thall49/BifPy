@@ -1,8 +1,12 @@
-from src.bifgraph import BifGraph
+import sys
 import numpy as np
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-def f(r, x):
-    return x**2 - r
+from src.bifgraph import BifGraph
+
+def f(x, r):
+    return 
 
 bg = BifGraph(f)
 
