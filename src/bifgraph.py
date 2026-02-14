@@ -21,7 +21,7 @@ class BifGraph:
         x = np.linspace(self._xmin, self._xmax, self._subs, endpoint=True)
         R, X = np.meshgrid(r, x, indexing='xy')
 
-        self._grid = np.stack((R, X), axis=1)
+        self._grid = np.stack((R, X), axis=-1)
 
     def func(self, func: _FloatPairFn):
         self._f = func

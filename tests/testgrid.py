@@ -1,4 +1,5 @@
 from src.bifgraph import BifGraph
+import numpy as np
 
 def f(tup):
     return tup[0] * tup[1]
@@ -12,3 +13,4 @@ bg.subsections(5)
 bg._gen_grid()
 
 print(bg._grid)
+print(np.shape(bg._grid))
